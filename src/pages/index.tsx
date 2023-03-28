@@ -18,6 +18,7 @@ export default function Home() {
         <Button>
           Salvar
         </Button>
+        <button className='btn-blue'>Teste</button>
       </main>
     </>
   )
