@@ -1,0 +1,1 @@
+### contém arquivos que fazem chamadas à API
