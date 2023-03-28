@@ -1,0 +1,1 @@
+### contem arquivos relacionados a configuração do estado local, por exemplo: Redux Toolkit, como actions, reducers e a store.

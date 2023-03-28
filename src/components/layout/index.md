@@ -1,0 +1,1 @@
+### contém componentes de layout, como o header e o footer
