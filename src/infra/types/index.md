@@ -1,1 +1,0 @@
-### tipos dos objetos das respostas retornadas por um serviço
