@@ -1,6 +1,7 @@
+import { getRepo } from "@/api/repositories"
+
 export async function RepoList() {
-  const response = await fetch('https://api.github.com/users/wilsonmjunior/repos')
-  const repos = await response.json()
+  const repos = await getRepo('wilsonmjunior')
 
   return (
     <div>
