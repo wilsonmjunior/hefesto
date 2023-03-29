@@ -3,7 +3,12 @@ import { User } from '@/components/pages/User'
 
 import Link from 'next/link'
 
-export default function Home() {
+export default async function Home() {
+  // const [user, repos] = await Promise.all([
+  //   fetch('https://api.github.com/users/wilsonmjunior'),
+  //   fetch('https://api.github.com/users/wilsonmjunior/repos'),
+  // ])
+
   return (
    <main>
       <h1 className="text-xl">Home</h1>
