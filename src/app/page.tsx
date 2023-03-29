@@ -2,6 +2,7 @@ import { RepoList } from '@/components/pages/RepoList'
 import { User } from '@/components/pages/User'
 
 import Link from 'next/link'
+import { Suspense } from 'react'
 
 export default async function Home() {
   // const [user, repos] = await Promise.all([
@@ -15,12 +16,14 @@ export default async function Home() {
       <div className="flex items-center justify-center">
         <Link href="/counter">Counter Page</Link>
       </div>
+     
+      <Suspense fallback={<p>Carregando usuário</p>}>
+        {/* @ts-expect-error Async Server Component */}
+        <User />
+      </Suspense>
 
       {/* @ts-expect-error Async Server Component */}
       <RepoList />
-
-      {/* @ts-expect-error Async Server Component */}
-      <User />
    </main>
   )
 }
