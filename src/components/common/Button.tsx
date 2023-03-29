@@ -29,15 +29,13 @@ export function Button({ children, className: externalClass, onClick, style = 'p
         font-bold
         uppercase
         text-sm
-        px-6
-        py-3
+        px-4
+        py-2
         rounded
         shadow
         hover:shadow-lg
         outline-none
         focus:outline-none
-        mr-1
-        mb-1
         ease-linear
         transition-all
         duration-150 ${className}
