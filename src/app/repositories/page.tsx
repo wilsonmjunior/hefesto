@@ -1,5 +1,4 @@
-import { Button } from "@/components/common/Button";
-import { Table } from "@/components/common/Table";
+import { Table } from "@/components";
 import { columns } from "./columns";
 
 const data = [
@@ -22,12 +21,10 @@ const data = [
 export default function Repositories() {
   return (
     <div className="container mx-auto my-10">
-      <Table 
+      <Table
         data={data} 
         columns={columns}
       />
-
-      <Button>Teste</Button>
     </div>
   )
 }

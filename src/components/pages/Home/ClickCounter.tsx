@@ -1,5 +1,6 @@
 'use client'
 
+import { Button } from "@/components"
 import { useState } from "react"
 
 export function ClickCounter() {
@@ -7,18 +8,18 @@ export function ClickCounter() {
 
   return (
     <div className="flex items-center">
-      <button
-        className="btn btn-primary" 
+      <Button
+        variant="outlined"
+        color="secondary"
         onClick={() => setCount(oldState => oldState + 1)}
       >
         increment
-      </button>
-      <button 
-        className="btn btn-secondary" 
+      </Button>
+      <Button 
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
         decrement
-      </button>
+      </Button>
       <div className="ml-2">{count}</div>
     </div>
   )
