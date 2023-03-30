@@ -1,5 +1,5 @@
-import { RepoList } from '@/components/pages/Home/RepoList'
-import { User } from '@/components/pages/Home/User'
+import { RepoList } from '@/components/pages/home/RepoList'
+import { User } from '@/components/pages/home/User'
 
 import Link from 'next/link'
 import { Suspense } from 'react'

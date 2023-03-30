@@ -1,4 +1,4 @@
-import { ClickCounter } from "@/components/pages/Home/ClickCounter";
+import { ClickCounter } from "@/components/pages/counter/ClickCounter";
 
 export default function Counter() {
   return (
