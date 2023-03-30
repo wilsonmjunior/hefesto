@@ -7,7 +7,7 @@ export function ClickCounter() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="flex items-center">
+    <div className="w-[800px] p-10 flex items-center justify-between">
       <Button
         variant="outlined"
         color="secondary"
@@ -15,7 +15,23 @@ export function ClickCounter() {
       >
         increment
       </Button>
+
       <Button 
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        decrement
+      </Button>
+
+      <Button 
+        variant="outlined"  
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        decrement
+      </Button>
+
+      <Button 
+        variant="outlined"  
+        color="none"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
         decrement
