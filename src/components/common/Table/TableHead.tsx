@@ -8,7 +8,7 @@ export function TableHead({ columns }: Pick<TableHeadProps, 'columns'>) {
           <th
             key={column.field}
             scope="col"
-            className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider"
+            className="px-6 py-4 text-left text-md font-normal text-gray-900 tracking-wider"
           >
             {column.headerName}
           </th>

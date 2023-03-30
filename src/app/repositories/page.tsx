@@ -1,5 +1,5 @@
-import { EllipsisIcon } from "@/assets/icons";
-import { Table } from "@/components/common/Table";
+import { Table } from "@/components";
+import { columns } from "./columns";
 
 const data = [
   {
@@ -18,27 +18,10 @@ const data = [
   },
 ];
 
-const columns = [
-  { field: 'id', headerName: 'Id' },
-  { field: 'name', headerName: 'Name' },
-  { field: 'description', headerName: 'Description' },
-  { field: 'producers', headerName: 'Producers', renderCell: (value: string[]) => value.join(", ") },
-  { field: 'createdAt', headerName: 'Created At' },
-  {
-    field: 'actions',
-    headerName: 'Actions',
-    renderCell: (value: any, row: Record<string, any>) => (
-      <button>
-        <EllipsisIcon />
-      </button>
-    ),
-  },
-];
-
 export default function Repositories() {
   return (
     <div className="container mx-auto my-10">
-      <Table 
+      <Table
         data={data} 
         columns={columns}
       />
