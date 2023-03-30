@@ -8,7 +8,7 @@ export function TableBody({ data, columns }: TableBodyProps) {
           {columns.map((column) => (
             <td
               key={`${item.id}-${column.field}`}
-              className="px-6 py-4 whitespace-nowrap text-sm text-gray-500 md:text-base align-top"
+              className="px-6 py-4 whitespace-nowrap text-sm font-normal text-gray-600 align-middle"
             >
               {
                 column?.renderCell 
