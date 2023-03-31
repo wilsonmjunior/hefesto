@@ -1,4 +1,7 @@
-import { Table } from "@/components";
+'use client'
+
+import { Header, Table } from "@/components";
+import { IconButton } from "@/components/common/IconButton";
 import { columns } from "./columns";
 
 const data = [
@@ -21,10 +24,15 @@ const data = [
 export default function Repositories() {
   return (
     <div className="container mx-auto my-10">
+      {/* file path pages - path=['Home', 'Current Page'] */}
+      <Header title="Repositories" />
+
       <Table
         data={data} 
         columns={columns}
       />
+
+      {/* <IconButton onClick={() => console.log()} /> */}
     </div>
   )
 }
