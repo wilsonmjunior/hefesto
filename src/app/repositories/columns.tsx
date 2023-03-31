@@ -1,6 +1,6 @@
 'use client'
 
-import { ActionItem, ActionMenu } from "@/components/common/Table/ActionMenu";
+import { ActionItemProps, ActionMenu } from "@/components";
 
 const itensMenu = [
   { 
@@ -13,7 +13,7 @@ const itensMenu = [
       console.log("teste delete")  
     }, 
   },
-] as ActionItem[]
+] as ActionItemProps[]
 
 export const columns = [
   { field: 'id', headerName: 'Id' },
