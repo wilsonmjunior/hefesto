@@ -7,19 +7,56 @@ export function ClickCounter() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="w-[800px] p-10 flex items-center justify-between">
+    <div className="w-[1000px] p-10 flex items-center justify-between">
       <Button
-        variant="outlined"
         color="secondary"
         onClick={() => setCount(oldState => oldState + 1)}
       >
-        increment
+        Increment
       </Button>
 
       <Button 
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
-        decrement
+        Decrement
+      </Button>
+
+      <Button 
+        color="secondary"
+        variant="outlined"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Teste
+      </Button>
+
+      <Button 
+        color="none"
+        variant="outlined"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        None Outlined
+      </Button>
+
+      <Button 
+        color="none"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        None
+      </Button>
+
+      <Button 
+        color="success"
+        variant="outlined"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Success Outlined
+      </Button>
+
+      <Button 
+        color="success"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Success
       </Button>
 
       <div className="ml-2">{count}</div>

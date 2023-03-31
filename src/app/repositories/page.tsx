@@ -32,7 +32,7 @@ export default function Repositories() {
         columns={columns}
       />
 
-      {/* <IconButton onClick={() => console.log()} /> */}
+      <IconButton onClick={() => console.log()} />
     </div>
   )
 }

@@ -1,33 +1,33 @@
 import { classNames } from '@/utils/styles';
-import styles from './button.module.css'
+import './button.css'
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  onClick: () => void;
   color?: 'primary' | 'secondary' | 'error' | 'success' | 'none';
   variant?: 'outlined' | 'standard';
 }
 
 export function Button({ 
-  children, variant = 'standard', 
+  children, 
+  variant = 'standard', 
   color = 'primary', 
   className = '',
   ...othersProps }: ButtonProps,
 ) {
   const colorStyle = {
     standard: {
-      primary: styles['primary'],
-      secondary: styles['secondary'],
-      error: styles['error'],
-      success: styles['success'],
-      none: styles['none'],
+      primary: 'primary',
+      secondary: 'secondary',
+      error: 'error',
+      success: 'success',
+      none: 'none',
     },
     outlined: {
-      primary: styles['primary-outlined'],
-      secondary: styles['secondary-outlined'],
-      error: styles['error-outlined'],
-      success: styles['success-outlined'],
-      none: styles['none-outlined'],
+      primary: 'primary-outlined',
+      secondary: 'secondary-outlined',
+      error: 'error-outlined',
+      success: 'success-outlined',
+      none: 'none-outlined',
     }
   }
 
