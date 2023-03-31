@@ -22,20 +22,6 @@ export function ClickCounter() {
         decrement
       </Button>
 
-      <Button 
-        variant="outlined"  
-        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        decrement
-      </Button>
-
-      <Button 
-        variant="outlined"  
-        color="none"
-        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        decrement
-      </Button>
       <div className="ml-2">{count}</div>
     </div>
   )

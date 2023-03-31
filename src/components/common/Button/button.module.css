@@ -17,48 +17,48 @@
       transition-all duration-150;
   }
   
-  .primary-button {
+  .primary {
     @apply button bg-blue-700 border-2 border-blue-700;
   }
 
-  .primary-button:hover {
+  .primary:hover {
     @apply border-blue-600 bg-blue-600;
   }
   
-  .primary-button-outlined {
-    @apply primary-button bg-transparent text-blue-700;
+  .primary-outlined {
+    @apply primary bg-transparent text-blue-700;
   }
 
-  .primary-button-outlined:hover {
+  .primary-outlined:hover {
     @apply bg-blue-50;
   }
   
-  .secondary-button {
+  .secondary {
     @apply button bg-purple-700 border-2 border-purple-700;
   }
 
-  .secondary-button:hover {
+  .secondary:hover {
     @apply border-purple-600 bg-purple-600;; 
   }
   
-  .secondary-button-outlined {
-    @apply secondary-button bg-transparent text-purple-700;
+  .secondary-outlined {
+    @apply secondary bg-transparent text-purple-700;
   }
 
-  .secondary-button-outlined:hover {
+  .secondary-outlined:hover {
     @apply bg-purple-50;
   }
   
   .error {
-    @apply button bg-red-700 border-2 border-red-700;
+    @apply button bg-red-600 border-2 border-red-600;
   }
 
   .error:hover {
-    @apply border-red-600 bg-red-600;; 
+    @apply border-red-500 bg-red-500;
   }
   
   .error-outlined {
-    @apply error bg-transparent text-red-700;
+    @apply error bg-transparent text-red-600;
   }
 
   .error-outlined:hover {
@@ -81,15 +81,15 @@
     @apply bg-green-50;
   }
   
-  .none-button {
+  .none {
     @apply button border-2 border-white text-[#212B36];
   }
 
-  .none-button:hover {
+  .none:hover {
     @apply border-[#E7E7E7] bg-[#E7E7E7];
   }
   
-  .none-button-outlined {
-    @apply none-button bg-transparent border-[#E7E7E7];
+  .none-outlined {
+    @apply none bg-transparent border-[#E7E7E7];
   }
 }

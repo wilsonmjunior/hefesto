@@ -1,4 +1,4 @@
-const { fontFamily, boxShadow } = require('tailwindcss/defaultTheme')
+const { boxShadow } = require('tailwindcss/defaultTheme')
 
 module.exports = {
   content: [
@@ -6,9 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ['var(--font-inter)', ...fontFamily.sans],
-      },
+      // fontFamily: {
+      //   sans: ['var(--font-inter)', ...fontFamily.sans],
+      // },
     },
     boxShadow: {
       ...boxShadow,
