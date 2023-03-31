@@ -15,18 +15,18 @@ export function Button({
 ) {
   const colorStyle = {
     standard: {
-      primary: styles['primary-button'],
-      secondary: styles['secondary-button'],
-      error: styles['error-button'],
-      success: styles['success-button'],
-      none: styles['none-button'],
+      primary: styles['primary'],
+      secondary: styles['secondary'],
+      error: styles['error'],
+      success: styles['success'],
+      none: styles['none'],
     },
     outlined: {
-      primary: styles['primary-button-outlined'],
-      secondary: styles['secondary-button-outlined'],
-      error: styles['error-button-outlined'],
-      success: styles['success-button-outlined'],
-      none: styles['none-button-outlined'],
+      primary: styles['primary-outlined'],
+      secondary: styles['secondary-outlined'],
+      error: styles['error-outlined'],
+      success: styles['success-outlined'],
+      none: styles['none-outlined'],
     }
   }
 
