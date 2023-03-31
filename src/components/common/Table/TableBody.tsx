@@ -2,7 +2,7 @@ import { TableProps as TableBodyProps } from "./types"
 
 export function TableBody({ data, columns }: TableBodyProps) {
   return (
-    <tbody className="bg-white divide-y divide-gray-200">
+    <tbody className="bg-white">
       {data.map((item) => (
         <tr key={item.id}>
           {columns.map((column) => (

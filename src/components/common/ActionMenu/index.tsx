@@ -1,9 +1,11 @@
+'use client'
+
 import { Fragment } from "react"
 import { Menu, Transition } from "@headlessui/react"
 import { EllipsisVerticalIcon } from "@heroicons/react/20/solid"
 import Link from "next/link";
 
-export interface ActionItem {
+export interface ActionItemProps {
   icon?: React.ReactElement;
   title: string;
   href?: string;
@@ -11,7 +13,7 @@ export interface ActionItem {
 }
 
 interface ActionMenuProps {
-  data: ActionItem[];
+  data: ActionItemProps[];
 }
 
 export function ActionMenu({ data = [] }: ActionMenuProps) {
