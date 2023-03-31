@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl text-[#212B36] font-semibold;
+  }
+  h2 {
+    @apply text-xl;
+  }
+}

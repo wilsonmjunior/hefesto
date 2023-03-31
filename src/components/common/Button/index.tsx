@@ -1,7 +1,7 @@
-import { ButtonHTMLAttributes } from 'react'
+import { classNames } from '@/utils/styles';
 import styles from './button.module.css'
 
-interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
   onClick: () => void;
   color?: 'primary' | 'secondary' | 'error' | 'success' | 'none';
@@ -11,6 +11,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 export function Button({ 
   children, variant = 'standard', 
   color = 'primary', 
+  className = '',
   ...othersProps }: ButtonProps,
 ) {
   const colorStyle = {
@@ -34,7 +35,7 @@ export function Button({
 
   return (
     <button 
-      className={customClassName}
+      className={classNames(className, customClassName)}
       {...othersProps}
     >
       {children}
