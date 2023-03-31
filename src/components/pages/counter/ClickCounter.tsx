@@ -12,13 +12,7 @@ export function ClickCounter() {
         color="secondary"
         onClick={() => setCount(oldState => oldState + 1)}
       >
-        Increment
-      </Button>
-
-      <Button 
-        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Decrement
+        Button
       </Button>
 
       <Button 
@@ -26,7 +20,20 @@ export function ClickCounter() {
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
-        Teste
+        Button
+      </Button>
+
+      <Button 
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Button
+      </Button>
+
+      <Button 
+        variant="outlined"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Button
       </Button>
 
       <Button 
@@ -34,7 +41,7 @@ export function ClickCounter() {
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
-        None Outlined
+        Button
       </Button>
 
       <Button 
@@ -49,14 +56,29 @@ export function ClickCounter() {
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
-        Success Outlined
+        Button
       </Button>
 
       <Button 
         color="success"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
       >
-        Success
+        Button
+      </Button>
+
+      <Button 
+        color="error"
+        variant="outlined"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Button
+      </Button>
+
+      <Button 
+        color="error"
+        onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
+      >
+        Button
       </Button>
 
       <div className="ml-2">{count}</div>
