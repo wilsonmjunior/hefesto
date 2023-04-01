@@ -1,6 +1,6 @@
 'use client'
 
-import { ActionItemProps, ActionMenu, IconButton } from "@/components"
+import { Dropdown, DropdownItemProps, IconButton } from "@/components"
 import { Column } from "@/components/common/Table/types";
 import { HeartIcon } from "@heroicons/react/20/solid";
 
@@ -15,7 +15,7 @@ const itensMenu = [
       console.log("teste delete")  
     }, 
   },
-] as ActionItemProps[]
+] as DropdownItemProps[]
 
 export const columns = [
   { 
@@ -52,7 +52,7 @@ export const columns = [
     headerName: '',
     renderCell(value: any, row: Record<string, any>) {
       return (
-        <ActionMenu data={itensMenu} />
+        <Dropdown data={itensMenu} />
       )
     },
   },
