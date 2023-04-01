@@ -1,5 +1,8 @@
 export { ActionMenu } from "./common/ActionMenu"
-export type { ActionItemProps } from "./common/ActionMenu"
 export { Button } from "./common/Button"
-export { Table,  } from "./common/Table"
+export { Breadcrumbs } from "./common/Breadcrumbs"
+export { Dropdown } from './common/Dropdown';
+export type { DropdownItemProps, DropdownProps } from "./common/Dropdown"
+export { IconButton } from "./common/IconButton"
+export { Table } from "./common/Table"
 export { Header } from "./common/Layout"
