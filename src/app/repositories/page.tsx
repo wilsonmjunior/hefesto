@@ -1,4 +1,5 @@
 import { Dropdown, Header, Table } from "@/components";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 import { columns } from "./columns";
 
 const data = [
@@ -30,24 +31,15 @@ export default function Repositories() {
 
       <div className="flex justify-end mt-10">
         <Dropdown 
+          label="Options"
+          variant="outlined"
           data={[
             { title: "Item 1" },
             { title: "Item 2" }
           ]}
           startIcon={
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="w-5 h-5"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-            </svg>
-
+            <Bars3Icon className="h-5 w-5 text-blue-700" />
           }
-          label="Options"
         />
       </div>
     </div>
