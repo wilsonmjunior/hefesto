@@ -1,6 +1,9 @@
-import { Dropdown, Header, Table } from "@/components";
-import { Bars3Icon } from "@heroicons/react/24/solid";
+'use client'
+
+import { Header, Table } from "@/components";
 import { columns } from "./columns";
+
+import { FormRepository } from "@/components/pages/repositories/FormRepository";
 
 const data = [
   {
@@ -24,23 +27,15 @@ export default function Repositories() {
     <div className="container mx-auto my-10">
       <Header title="Repositories" paths={['Home', 'Repositories']} />
 
-      <Table
-        data={data} 
-        columns={columns}
-      />
-
-      <div className="flex justify-end mt-10">
-        <Dropdown 
-          label="Options"
-          variant="outlined"
-          data={[
-            { title: "Item 1" },
-            { title: "Item 2" }
-          ]}
-          startIcon={
-            <Bars3Icon className="h-5 w-5 text-blue-700" />
-          }
+      <div className="container mx-auto p-7 rounded-lg border">
+        <Table
+          data={data} 
+          columns={columns}
         />
+      </div>
+
+      <div className="mt-10">
+        <FormRepository />
       </div>
     </div>
   )
