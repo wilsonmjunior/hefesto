@@ -1,6 +1,6 @@
 'use client'
 
-import { Dropdown, DropdownItemProps, IconButton } from "@/components"
+import { ActionMenu, DropdownItemProps, IconButton } from "@/components"
 import { Column } from "@/components/common/Table/types";
 import { HeartIcon } from "@heroicons/react/20/solid";
 
@@ -52,7 +52,7 @@ export const columns = [
     headerName: '',
     renderCell(value: any, row: Record<string, any>) {
       return (
-        <Dropdown data={itensMenu} />
+        <ActionMenu data={itensMenu} />
       )
     },
   },

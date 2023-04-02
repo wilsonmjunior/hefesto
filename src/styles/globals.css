@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'react-datepicker/dist/react-datepicker.css';
+
 @layer base {
   h1 {
     @apply text-3xl text-[#212B36] font-semibold;

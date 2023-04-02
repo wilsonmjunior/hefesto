@@ -38,7 +38,7 @@ export function Dropdown({
           {...othersProps}
         >
           {!endIcon && startIcon ? <div>{startIcon}</div> : ''}
-          <div className="">{label}</div>
+          {label}
           {!startIcon && endIcon ? <div>{endIcon}</div> : ''}
         </Menu.Button>
       </div>
