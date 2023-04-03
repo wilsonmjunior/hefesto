@@ -5,13 +5,13 @@ import { TableBody } from "./TableBody";
 import { TableHead } from "./TableHead";
 import { TableProps } from "./types";
 
+import './table.css'
+
 export function Table({ columns, data }: TableProps) {
   return (
     <>
-      <div 
-        className="bg-white shadow-sm" 
-      >
-        <table className="min-w-full divide-y divide-gray-200">
+      <div className="table-container">
+        <table className="table-content">
           <TableHead columns={columns} />
           <TableBody columns={columns} data={data} />
         </table>
