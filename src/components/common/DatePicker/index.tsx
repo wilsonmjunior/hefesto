@@ -1,13 +1,11 @@
-"use client"
-
 import { useState } from "react"
 import ReactDatePicker from "react-datepicker"
 
 import "./date-picker.css"
-import { CustomDatePickerHeader } from "./CustomDatepickerHeader";
+import { CustomDatePickerHeader } from "./CustomDatePickerHeader";
 
 interface DatePickerProps {
-  onSelectedDate(date: Date): void;
+  onSelectedDate?(date: Date): void;
 }
 
 export function DatePicker({ onSelectedDate }: DatePickerProps) {
@@ -15,7 +13,7 @@ export function DatePicker({ onSelectedDate }: DatePickerProps) {
 
   const handleSelectedDate = (value: Date) => {
     setSelectedDate(value)
-    onSelectedDate(value)
+    onSelectedDate && onSelectedDate(value)
   }
   
   return (
