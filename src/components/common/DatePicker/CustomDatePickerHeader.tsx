@@ -49,13 +49,13 @@ export function  CustomDatePickerHeader({
       </div>
 
       <div className="datepicker-display">
-        <div className="font-medium text-md">
+        <div className="flex font-medium text-md">
           <select
             value={getMonth}
             onChange={({ target: { value } }) =>
               changeMonth(months.indexOf(value))
             }
-            className="ml-2"
+            className="datepicker-input w-32"
           >
             { months.map((month, index) => (
               <option key={index}>{month}</option>
@@ -63,10 +63,10 @@ export function  CustomDatePickerHeader({
           </select>
           <select
             value={getYear}
-            onChange={({ target: { value } }) =>
-              changeYear(months.indexOf(value))
+            onChange={({ target: { value } }) => 
+              changeYear(Number(value))
             }
-            className="ml-2"
+            className="datepicker-input ml-2 w-20"
           >
             { years.map((year, index) => (
               <option key={index}>{year}</option>
@@ -76,10 +76,10 @@ export function  CustomDatePickerHeader({
 
         <div>
           <button onClick={decreaseMonth} disabled={prevMonthButtonDisabled}>
-            <ChevronLeftIcon />
+            <ChevronLeftIcon className="datepicker-display-icon" />
           </button>
           <button onClick={increaseMonth} disabled={nextMonthButtonDisabled}>
-            <ChevronRightIcon />
+            <ChevronRightIcon className="datepicker-display-icon" />
           </button>
         </div>
       </div>

@@ -54,3 +54,7 @@
 .datepicker-display {
   @apply flex items-center bg-white px-2 py-2 justify-between;
 }
+
+.datepicker-display-icon {
+  @apply w-6 h-6;
+}
