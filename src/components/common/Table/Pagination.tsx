@@ -1,9 +1,9 @@
 export function Pagination() {
   return (
-    <nav aria-label="Page navigation" className="mt-5 flex justify-end">
-      <ul className="inline-flex shadow-md rounded-lg">
+    <nav aria-label="Page navigation" className="pagination-nav">
+      <ul className="pagination-content">
         <li>
-          <button className="h-10 px-5 text-blue-600 transition-colors duration-150 rounded-l-lg focus:shadow-outline hover:bg-blue-100">
+          <button className="pagination-previous">
             <svg 
               className="w-4 h-4 fill-current" 
               viewBox="0 0 20 20"
@@ -13,30 +13,22 @@ export function Pagination() {
           </button>
         </li>
         <li>
-          <button 
-            className="h-10 px-5 text-blue-600 transition-colors duration-150 focus:shadow-outline hover:bg-blue-100"
-          >
+          <button className="pagination-item">
             1
           </button>
         </li>
         <li>
-          <button 
-            className="h-10 px-5 text-blue-600 transition-colors duration-150 focus:shadow-outline hover:bg-blue-100"
-          >
+          <button className="pagination-item">
             2
           </button>
         </li>
         <li>
-          <button 
-            className="h-10 px-5 text-white transition-colors duration-150 bg-blue-600 border border-r-0 border-blue-600 focus:shadow-outline"
-          >
+          <button className="pagination-item-selected">
             3
           </button>
         </li>
         <li>
-          <button 
-            className="h-10 px-5 text-blue-600 transition-colors duration-150 bg-white rounded-r-lg focus:shadow-outline hover:bg-blue-100"
-          >
+          <button className="pagination-next">
             <svg 
               className="w-4 h-4 fill-current" 
               viewBox="0 0 20 20"
