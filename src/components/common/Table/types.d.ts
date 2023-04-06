@@ -1,12 +1,35 @@
-export interface Column {
+export interface Column<T> {
   field: string;
   headerName: string;
   valueFormat?: string;
+  renderCell?(value: any, row: T): React.ReactNode;
   valueFormatter?(value: unknown): Row[string];
-  renderCell?(value: any, row: Record<string, any>): React.ReactNode;
 }
 
-export interface TableProps {
-  columns: Column[];
-  data: Record<string, any>[];
+export interface PaginationProps {
+  currentPage: number;
+  pathBase: string;
+  rowsPerPage: number;
+  totalPages: number;
+}
+
+export interface PageProps {
+  next?: boolean;
+  prev?: boolean;
+  page?: number;
+}
+
+export interface TableProps<T> {
+  columns: Column<T>[];
+  data: Page<T>[];
+  paginationProps: PaginationProps;
+}
+
+export type TableHeadProps<T> = {
+  columns: Column<T>[];
+}
+
+export type TableBodyProps<T> = {
+  columns: Column<T>[];
+  data: Page<T>[];
 }

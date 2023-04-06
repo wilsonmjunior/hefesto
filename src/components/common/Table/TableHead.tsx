@@ -1,6 +1,6 @@
-import { TableProps as TableHeadProps } from "./types";
+import { TableHeadProps } from "./types";
 
-export function TableHead({ columns }: Pick<TableHeadProps, 'columns'>) {
+export function TableHead<T>({ columns }: TableHeadProps<T>) {
   return (
     <thead className="bg-gray-50">
       <tr>
