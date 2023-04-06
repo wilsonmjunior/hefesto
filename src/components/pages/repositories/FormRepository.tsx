@@ -1,7 +1,12 @@
-import { DatePicker } from "@/components/common/DatePicker";
+'use client'
+
+import { DatePicker } from "@/components/common/DatePicker"
 import { Form } from "@/components/templates/Form";
+import { useState } from "react";
 
 export function FormRepository() {
+  const [selectedDate, setSelectedDate] = useState<Date>(new Date())
+  
   return (
     <Form>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -64,7 +69,7 @@ export function FormRepository() {
 
         <label className="block">
           <span className="text-gray-700">Data de Nascimento:</span>
-          <DatePicker />
+          <DatePicker selectedDate={selectedDate} onSelectedDate={setSelectedDate} />
         </label>
 
         <label className="block">

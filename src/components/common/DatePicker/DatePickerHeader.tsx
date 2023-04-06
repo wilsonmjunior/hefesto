@@ -1,6 +1,6 @@
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/20/solid"
 
-interface CustomDatePickerHeaderProps {
+interface DatePickerHeaderProps {
   date: Date;
   changeMonth(month: number): void;
   changeYear(year: number): void;
@@ -10,7 +10,7 @@ interface CustomDatePickerHeaderProps {
   prevMonthButtonDisabled:boolean;
 }
 
-export function  CustomDatePickerHeader({
+export function  DatePickerHeader({
   date,
   changeMonth,
   changeYear,
@@ -18,7 +18,7 @@ export function  CustomDatePickerHeader({
   increaseMonth,
   prevMonthButtonDisabled,
   nextMonthButtonDisabled,
-}: CustomDatePickerHeaderProps) {
+}: DatePickerHeaderProps) {
   const months = [
     "January",
     "February",

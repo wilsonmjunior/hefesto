@@ -1,6 +1,6 @@
-import { TableProps as TableBodyProps } from "./types"
+import { TableBodyProps } from "./types"
 
-export function TableBody({ data, columns }: TableBodyProps) {
+export function TableBody<T>({ data, columns }: TableBodyProps<T>) {
   return (
     <tbody className="bg-white">
       {data.map((item) => (

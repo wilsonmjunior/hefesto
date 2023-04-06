@@ -1,5 +1,3 @@
-'use client'
-
 import { Header, Table } from "@/components";
 import { columns } from "./columns";
 
