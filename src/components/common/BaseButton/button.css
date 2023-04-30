@@ -20,11 +20,11 @@
 
 /* #region Primary + */
 .primary {
-  @apply button bg-primary-600;
+  @apply button bg-blue-600;
 }
 
 .primary:hover {
-  @apply bg-primary-700;
+  @apply bg-blue-700;
 }
 
 .primary:focus,
@@ -34,32 +34,32 @@
 
 .primary:disabled,
 .primary:disabled:hover {
-  @apply text-white bg-primary-200;
+  @apply text-white bg-blue-200;
 }
 
 .primary-outlined {
-  @apply primary bg-transparent border-2 border-primary-300 text-primary-600 !important;
+  @apply primary bg-transparent border-2 border-blue-300 text-blue-600 !important;
 }
 
 .primary-outlined:hover {
-  @apply bg-primary-50 !important;
+  @apply bg-blue-50 !important;
 }
 
 .primary-outlined:disabled,
 .primary-outlined:disabled:hover {
-  @apply text-primary-300 bg-transparent border-primary-200 !important;
+  @apply text-blue-300 bg-transparent border-blue-200 !important;
 }
 
 .primary-none {
-  @apply primary bg-transparent text-primary-700 !important;
+  @apply primary bg-transparent text-blue-700 !important;
 }
 
 .primary-none:hover {
-  @apply text-primary-800;
+  @apply text-blue-800;
 }
 
 .primary-none:disabled {
-  @apply text-primary-300 !important;
+  @apply text-blue-300 !important;
 }
 
 /* #endregion */
@@ -112,11 +112,11 @@
 
 /* #region Error + */
 .error {
-  @apply button bg-error-600;
+  @apply button bg-red-600;
 }
 
 .error:hover {
-  @apply bg-error-700;
+  @apply bg-red-700;
 }
 
 .error:focus,
@@ -126,32 +126,32 @@
 
 .error:disabled,
 .error:disabled:hover {
-  @apply text-white bg-error-200;
+  @apply text-white bg-red-200;
 }
 
 .error-outlined {
-  @apply error bg-transparent border-2 border-error-300 text-error-600 !important;
+  @apply error bg-transparent border-2 border-red-300 text-red-600 !important;
 }
 
 .error-outlined:hover {
-  @apply bg-error-50 !important;
+  @apply bg-red-50 !important;
 }
 
 .error-outlined:disabled,
 .error-outlined:disabled:hover {
-  @apply text-error-300 bg-transparent border-error-200 !important;
+  @apply text-red-300 bg-transparent border-red-200 !important;
 }
 
 .error-none {
-  @apply error bg-transparent text-error-700 !important;
+  @apply error bg-transparent text-red-700 !important;
 }
 
 .error-none:hover {
-  @apply text-error-800;
+  @apply text-red-800;
 }
 
 .error-none:disabled {
-  @apply text-error-300 !important;
+  @apply text-red-300 !important;
 }
 
 /* #endregion */
