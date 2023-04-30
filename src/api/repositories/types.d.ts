@@ -1,4 +1,4 @@
-export type Repository = {
+export type RepositoryResponse = {
   id: string;
   name: string;
   description: string;
