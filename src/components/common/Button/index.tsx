@@ -1,44 +1,23 @@
-import { classNames } from '@/utils/styles';
-import './button.css'
+import { BaseButton, BaseButtonProps } from '../BaseButton';
 
-export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  children: React.ReactNode;
-  color?: 'primary' | 'secondary' | 'error' | 'success' | 'none';
-  variant?: 'outlined' | 'standard';
+export type Color = 'primary' | 'secondary' | 'error' | 'gray';
+
+interface ButtonProps extends Omit<BaseButtonProps, 'children'> {
+  icon?: React.ReactNode;
+  title: string;
 }
 
-export function Button({ 
-  children, 
-  variant = 'standard', 
-  color = 'primary', 
-  className = '',
-  ...othersProps }: ButtonProps,
-) {
-  const colorStyle = {
-    standard: {
-      primary: 'primary',
-      secondary: 'secondary',
-      error: 'error',
-      success: 'success',
-      none: 'none',
-    },
-    outlined: {
-      primary: 'primary-outlined',
-      secondary: 'secondary-outlined',
-      error: 'error-outlined',
-      success: 'success-outlined',
-      none: 'none-outlined',
-    }
-  }
-
-  const customClassName = colorStyle[variant][color];
-
+export function Button({
+  color,
+  icon,
+  title,
+  variant,
+  ...othersProps
+}: ButtonProps) {
   return (
-    <button 
-      className={classNames(className, customClassName)}
-      {...othersProps}
-    >
-      {children}
-    </button>
-  )
+    <BaseButton color={color} variant={variant} {...othersProps}>
+      {icon}
+      <p className="ml-1">{title}</p>
+    </BaseButton>
+  );
 }
