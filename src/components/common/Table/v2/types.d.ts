@@ -28,7 +28,6 @@ export interface TableProps<T> {
   paginationProps: PaginationProps;
   searchPlaceholder?: string;
   select?: boolean;
-  title: string;
   onSelectAll?(): void;
   onSelectItem?(item: string): void;
 }

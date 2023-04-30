@@ -19,16 +19,16 @@
     font-medium
     transition-colors
     duration-150
-    hover:bg-primary-50
-    hover:text-primary-600
+    hover:bg-blue-50
+    hover:text-blue-600
     hover:font-medium;
 }
 
 .pagination-item-selected {
   @apply pagination-item
-    text-primary-600
+    text-blue-600
     font-medium
-    bg-primary-50 !important;
+    bg-blue-50 !important;
 }
 
 .pagination-siblings {
