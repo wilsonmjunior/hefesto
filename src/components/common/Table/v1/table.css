@@ -15,7 +15,7 @@
 }
 
 .pagination-button {
-  @apply inline-flex items-center justify-center p-2 transition-colors duration-150 hover:text-primary-900 hover:bg-primary-50;
+  @apply inline-flex items-center justify-center p-2 transition-colors duration-150 hover:text-blue-900 hover:bg-blue-50;
 }
 
 .pagination-previous {
@@ -27,11 +27,11 @@
 }
 
 .pagination-item {
-  @apply px-5 py-2 h-full text-gray-800 transition-colors duration-150 hover:bg-primary-50;
+  @apply px-5 py-2 h-full text-gray-800 transition-colors duration-150 hover:bg-blue-50;
 }
 
 .pagination-item-selected {
-  @apply pagination-item text-white font-medium bg-primary-600 !important;  
+  @apply pagination-item text-white font-medium bg-blue-600 !important;  
 }
 
 .pagination-siblings {

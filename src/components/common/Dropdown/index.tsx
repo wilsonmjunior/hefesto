@@ -4,7 +4,7 @@ import { Fragment } from "react"
 import { Menu, Transition } from "@headlessui/react"
 import Link from "next/link";
 
-import { Button, ButtonProps } from "../Button";
+import { BaseButton, BaseButtonProps } from "../BaseButton";
 import './dropdown.css'
 
 export interface DropdownItemProps {
@@ -14,7 +14,7 @@ export interface DropdownItemProps {
   onClick?(): void;
 }
 
-export interface DropdownProps extends Omit<ButtonProps, 'children' | 'onClick'> {
+export interface DropdownProps extends Omit<BaseButtonProps, 'children' | 'onClick'> {
   label?: string;
   startIcon?: React.ReactNode;
   endIcon?: React.ReactNode;
@@ -25,15 +25,15 @@ export function Dropdown({
   label,
   startIcon,
   endIcon,
-  className = '', 
-  data = [], 
+  className = '',
+  data = [],
   ...othersProps
 }: DropdownProps) {
   return (
     <Menu as="div" className="dropdown">
       <div>
         <Menu.Button
-          as={Button}
+          as={BaseButton}
           className="p-2 w-full flex flex-1 gap-1"
           {...othersProps}
         >
@@ -62,14 +62,14 @@ export function Dropdown({
                       key={index}
                     >
                       {
-                        item.href ? 
-                          <Link 
+                        item.href ?
+                          <Link
                             href={item.href}
                             className="item-title"
                           >
                             {item.title}
-                          </Link> 
-                        : <button
+                          </Link>
+                          : <button
                             onClick={item.onClick}
                             className="item-button"
                           >
@@ -83,7 +83,7 @@ export function Dropdown({
             </Menu.Items>
           </Transition>
         ) : null
-      } 
+      }
     </Menu>
   )
 }
