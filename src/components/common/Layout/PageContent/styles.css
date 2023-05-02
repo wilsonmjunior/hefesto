@@ -1,0 +1,3 @@
+.page-content {
+  @apply container mx-auto p-7 rounded-lg border;
+}
