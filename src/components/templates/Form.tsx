@@ -10,18 +10,19 @@ export function Form({ children }: FormProps) {
       <div className="">
         <p>Title</p>
       </div>
-      
+
       <div>
         {children}
       </div>
 
       <div className="flex justify-end">
-        <Button variant="outlined" color="none" className="mr-2">
-          Back
-        </Button>
-        <Button disabled>
-          Save
-        </Button>
+        <Button
+          variant="outlined"
+          color="gray"
+          className="mr-2"
+          title="Back"
+        />
+        <Button disabled title="Save" />
       </div>
     </div>
   )

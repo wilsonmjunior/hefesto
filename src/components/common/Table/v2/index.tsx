@@ -1,9 +1,9 @@
-import { Pagination } from './Pagination';
-import { TableBody } from './TableBody';
-import { TableHead } from './TableHead';
-import { TableProps } from './types';
+import { Pagination } from './Pagination'
+import { TableBody } from './TableBody'
+import { TableHead } from './TableHead'
+import { TableProps } from './types'
 
-import './table.css';
+import './table.css'
 
 export function Table<T>({
   columns,
@@ -31,5 +31,5 @@ export function Table<T>({
 
       <Pagination {...paginationProps} />
     </div>
-  );
+  )
 }

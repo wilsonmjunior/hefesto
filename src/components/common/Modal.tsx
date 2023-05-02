@@ -13,7 +13,7 @@ export function Modal({ }: AlertDialogProps) {
   return (
     <Transition.Root show={isOpen} as={Fragment}>
       <Dialog as="div" className="relative z-10" onClose={setIsOpen}>
-        <Transition.Child 
+        <Transition.Child
           as={Fragment}
           enter="ease-out duration-300"
           enterFrom="opacity-0"
@@ -24,7 +24,7 @@ export function Modal({ }: AlertDialogProps) {
         >
           <div className="fixed inset-0 bg-blue-500 bg-opacity-50 transition-opacity" />
         </Transition.Child>
-        
+
         <div className="fixed inset-0 z-10 overflow-y-auto">
           <div className="flex min-h-full items-end justify-center p-4 text-center sm:items-center sm:p-0">
             <Transition.Child
@@ -51,8 +51,8 @@ export function Modal({ }: AlertDialogProps) {
                 </Paragraph>
 
                 <div className="flex justify-end px-4 mt-4">
-                  <Button>Deactivate</Button>
-                  <Button className="bg-red-600">Cancel</Button>
+                  <Button title="Deactivate" />
+                  <Button className="bg-red-600" title="Cancel" />
                 </div>
               </Dialog.Panel>
             </Transition.Child>

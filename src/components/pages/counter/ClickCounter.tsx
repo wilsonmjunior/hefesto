@@ -1,7 +1,7 @@
 'use client'
 
-import { Button } from "@/components"
 import { useState } from "react"
+import { Button } from "@/components"
 
 export function ClickCounter() {
   const [count, setCount] = useState(0)
@@ -11,75 +11,65 @@ export function ClickCounter() {
       <Button
         color="secondary"
         onClick={() => setCount(oldState => oldState + 1)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
+      <Button
         color="secondary"
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
+      <Button
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
+      <Button
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
-        color="none"
+      <Button
+        color="gray"
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
-        color="none"
+      <Button
+        color="gray"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        None
-      </Button>
+        title="Button"
+      />
 
-      <Button 
-        color="success"
+      <Button
+        color="primary"
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
-        color="success"
+      <Button
+        color="primary"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
+      <Button
         color="error"
         variant="outlined"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
-      <Button 
+      <Button
         color="error"
         onClick={() => setCount(oldState => oldState > 0 ? oldState - 1 : 0)}
-      >
-        Button
-      </Button>
+        title="Button"
+      />
 
       <div className="ml-2">{count}</div>
     </div>
