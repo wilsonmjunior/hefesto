@@ -24,6 +24,10 @@
     hover:font-medium;
 }
 
+.pagination-dots {
+  @apply text-lg text-gray-500 font-medium;
+}
+
 .pagination-item-selected {
   @apply pagination-item
     text-blue-600

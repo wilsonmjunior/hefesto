@@ -1,1 +1,0 @@
-### contém componentes específicos para cada página da aplicação, organizados em subpastas com o mesmo nome das rotas
