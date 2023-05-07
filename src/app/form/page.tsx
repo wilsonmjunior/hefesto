@@ -1,12 +1,20 @@
-type FormData = {
+type User = {
   name: string;
   age: string;
-};
+}
+
+interface UserParams extends FormData {
+  get(keys: (keyof User)): string;
+}
 
 export default function Page() {
-  async function onSave(formData: unknown[]) {
+  async function onSave(formData: UserParams) {
     'use server';
-    console.log('onSave', formData)
+    const userData = {
+      name: formData.get('name'),
+      age: formData.get('age'),
+    }
+    console.log('user:: ', userData);
   }
 
   return (
