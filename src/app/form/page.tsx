@@ -17,9 +17,9 @@ export default function Page() {
     console.log('user data:: ', userData);
   }
 
-  async function submitImage() {
+  async function onDelete() {
     "use server"
-    console.log('submit image:: ');
+    console.log('delete:: ');
   }
 
   return (
@@ -55,7 +55,7 @@ export default function Page() {
       {/* <div>
         <input
           className="mt-1 py-3 px-5 border rounded-md"
-          formAction={submitImage}
+          formAction=onDelete}
           type="image"
         />
       </div> */}
@@ -81,17 +81,17 @@ export default function Page() {
             py-3
             px-5
             rounded-lg
-            bg-gray-600
+            bg-red-600
             text-white
-            hover:bg-gray-500
+            hover:bg-red-500
             transition-all
             ease-linear"
-          formAction={submitImage}
+          formAction={onDelete}
         >
           Delete
         </button>
       </div>
-    </form>
+    </form >
   );
 }
 
