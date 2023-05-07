@@ -1,7 +1,7 @@
-import { getRepo } from "@/api/repositories"
+import { getRepoByUsername } from "@/api/repositories"
 
 export async function RepoList() {
-  const repos = await getRepo('wilsonmjunior')
+  const repos = await getRepoByUsername('wilsonmjunior')
 
   return (
     <div>
