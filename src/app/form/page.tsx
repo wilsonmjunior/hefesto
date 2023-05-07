@@ -14,7 +14,12 @@ export default function Page() {
       name: formData.get('name'),
       age: formData.get('age'),
     }
-    console.log('user:: ', userData);
+    console.log('user data:: ', userData);
+  }
+
+  async function onDelete() {
+    "use server"
+    console.log('delete:: ');
   }
 
   return (
@@ -31,15 +36,31 @@ export default function Page() {
     >
       <div className="col-span-4 flex flex-col">
         <label htmlFor="label-name">Name</label>
-        <input name="name" className="mt-1 py-3 px-5 border rounded-md" type="text" />
+        <input
+          className="mt-1 py-3 px-5 border rounded-md"
+          name="name"
+          type="text"
+        />
       </div>
 
       <div className="col-span-4 flex flex-col">
         <label htmlFor="label-age">Age</label>
-        <input name="age" className="mt-1 py-3 px-5 border rounded-md" type="text" />
+        <input
+          className="mt-1 py-3 px-5 border rounded-md"
+          name="age"
+          type="text"
+        />
       </div>
 
-      <div className="col-span-3 self-end">
+      {/* <div>
+        <input
+          className="mt-1 py-3 px-5 border rounded-md"
+          formAction=onDelete}
+          type="image"
+        />
+      </div> */}
+
+      <div className="col-span-4 space-x-2 self-end flex flex-row">
         <button
           type="submit"
           className="w-full
@@ -54,8 +75,23 @@ export default function Page() {
         >
           Save
         </button>
+
+        <button
+          className="w-full
+            py-3
+            px-5
+            rounded-lg
+            bg-red-600
+            text-white
+            hover:bg-red-500
+            transition-all
+            ease-linear"
+          formAction={onDelete}
+        >
+          Delete
+        </button>
       </div>
-    </form>
+    </form >
   );
 }
 
