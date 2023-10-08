@@ -1,6 +1,6 @@
 'use client';
 
-import { IconButton } from "@/components/Button/IconButton";
+import { IconButton } from "@/components";
 
 export function Form() {
   return (
