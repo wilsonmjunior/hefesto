@@ -6,4 +6,5 @@ export type { DropdownItemProps, DropdownProps } from "./common/Dropdown"
 export { IconButton } from "./common/IconButton"
 export { Table } from "./common/Table/v2"
 export { Header } from "./common/Layout"
+export { Notification } from "./common/Notification";
 export { Icon } from "./common/Icon";
